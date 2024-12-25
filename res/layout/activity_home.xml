@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Welcome Text Section -->
+        <TextView
+            android:id="@+id/textViewWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Welcome to Servify"
+            android:textColor="@color/primary_text_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Search Bar Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/searchEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Search here..."
+                android:padding="10dp"
+                android:background="@android:color/white"
+                android:textColor="@color/primary_text_color"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/searchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Search"
+                android:background="@color/navbar_item_background"
+                android:textColor="@color/navbar_item_text" />
+        </LinearLayout>
+
+        <!-- Navbar Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/navbar_background"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button_appointment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:text="Appointment"
+                android:onClick="appoint"
+                android:background="@color/navbar_item_background"
+                android:textColor="@color/navbar_item_text" />
+
+            <Button
+                android:id="@+id/button_about_us"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:text="About Us"
+                android:onClick="about"
+                android:background="@color/navbar_item_background"
+                android:textColor="@color/navbar_item_text" />
+
+            <Button
+                android:id="@+id/button_contact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:text="Contact"
+                android:onClick="contact"
+                android:background="@color/navbar_item_background"
+                android:textColor="@color/navbar_item_text" />
+            <Button
+                android:id="@+id/button_profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:text="Profile"
+                android:onClick="profile"
+                android:background="@color/navbar_item_background"
+                android:textColor="@color/navbar_item_text" />
+            
+            <Button
+                android:id="@+id/button_logout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:text="Logout"
+                android:onClick="logout"
+                android:background="@color/logout_item_background"
+                android:textColor="@color/navbar_item_text" />
+        </LinearLayout>
+
+        <!-- Profile Details Section -->
+
+    </LinearLayout>
+</ScrollView>
